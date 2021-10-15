@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week6</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Insert Title Here</title>
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <p class="hello">Hello</p>
+
+  <div class="background theme1 theme2 theme3" id="random">
+    <div class="header">
+      <h1 class="headder__logo">calc</h1>
+      <div class="header__theme" >
+        <p class="headder__text">THEME</p>
+        <div class="theme">
+          <div class="theme__number"><p>1</p><p>2</p><p>3</p></div>
+        <div class="theme__button" onclick="toggleTheme()">
+          <div id="theme__change"></div>
+        </div>
+      </div>
+
+        
+      </div>
+    </div>
+    <div class="screen">
+      <div data-previous-operand class="previous-operand"></div>
+      <div data-current-operand class="current-operand"></div>
+      <div data-display class="display"></div>
+    </div>
+
+    <div class="buttons">
+      <div class="buttons__size1">
+        <button class="size1" data-number>7</button>
+        <button class="size1" data-number>8</button>
+        <button class="size1" data-number>9</button>
+        <button class="size1 button__color2" data-delete>DEL</button>
+        <button class="size1" data-number>4</button>
+        <button class="size1" data-number>5</button>
+        <button class="size1" data-number>6</button>
+        <button class="size1" data-operation>+</button>
+        <button class="size1" data-number>1</button>
+        <button class="size1" data-number>2</button>
+        <button class="size1" data-number>3</button>
+        <button class="size1" data-operation>-</button>
+        <button class="size1" data-number>.</button>
+        <button class="size1" data-number>0</button>
+        <button class="size1" data-operation>/</button>
+        <button class="size1" data-operation>x</button> 
+      </div>
+      <div class="buttons__size2">
+        <button class="size2 button__color2" data-clear>RESET</button>
+        <button class="size2 button__color3" data-equals>=</button>
+      </div>
+    </div>
+
+
+  </div>
+
+
 </body>
+<script src="main1.js"></script>
 </html>
